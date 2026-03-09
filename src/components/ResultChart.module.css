@@ -1,0 +1,75 @@
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.barHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.barLabel {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.otherBadge {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.375rem;
+  background: var(--accent-light);
+  color: var(--accent);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.barStats {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.barTrack {
+  width: 100%;
+  height: 10px;
+  background: var(--border-light);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--color, var(--primary));
+  width: 0;
+  animation: progressBar 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes progressBar {
+  from { width: 0%; }
+  to { width: var(--progress); }
+}
+
+.totalVotes {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-light);
+  text-align: right;
+}
