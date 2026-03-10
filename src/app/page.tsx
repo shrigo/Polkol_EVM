@@ -79,6 +79,9 @@ export default async function Home() {
               Explore Polls
             </Link>
           </div>
+          <p className={`${styles.heroNote} animate-fade-in`}>
+            Please log in with your Google account to create polls. You can share your poll across websites like X, Facebook, WhatsApp, Telegram and more!
+          </p>
         </div>
         <div className={styles.heroVisual}>
           <div className={styles.floatingCard}>

@@ -61,6 +61,14 @@
   flex-wrap: wrap;
 }
 
+.heroNote {
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 480px;
+}
+
 .heroVisual {
   flex: 0 0 auto;
   display: flex;
