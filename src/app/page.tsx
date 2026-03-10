@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { TrendingUp, Clock, Users, BarChart3, Globe, Zap, Shield } from "lucide-react"
 import { prisma } from "@/lib/prisma"
 import { PollCard } from "@/components/PollCard"
@@ -81,7 +82,7 @@ export default async function Home() {
         </div>
         <div className={styles.heroVisual}>
           <div className={styles.floatingCard}>
-            <BarChart3 size={48} className={styles.heroIcon} />
+            <Image src="/logo.png" alt="Polkol" width={200} height={72} className={styles.heroIcon} priority />
           </div>
         </div>
       </section>

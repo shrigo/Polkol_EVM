@@ -69,20 +69,22 @@
 }
 
 .floatingCard {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
   border-radius: var(--radius-2xl);
-  background: linear-gradient(135deg, var(--primary), var(--accent));
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: float 4s ease-in-out infinite;
   box-shadow: 0 20px 60px rgba(99, 102, 241, 0.3);
+  padding: 1.5rem;
 }
 
 .heroIcon {
-  color: white;
-  opacity: 0.9;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* ─── Stats Bar ───────────────────────── */
